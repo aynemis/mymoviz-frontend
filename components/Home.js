@@ -12,7 +12,7 @@ function Home() {
   const [apimovies, setApiMovies] = useState([])
 
   useEffect(()=> {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-backend-rose.vercel.app/movies')
     .then(response => response.json())
     .then(data => {
       const moviesList = data.movies.map((movie) =>{
